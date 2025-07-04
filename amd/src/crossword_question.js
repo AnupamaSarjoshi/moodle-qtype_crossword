@@ -279,7 +279,7 @@ export class CrosswordQuestion {
         let countEl = stickyClue.querySelector('span.count');
         if (!strongEl) {
             strongEl = document.createElement('strong');
-            strongEl.classList.add('mr-1', 'text-nowrap');
+            strongEl.classList.add('me-1', 'text-nowrap');
             stickyClue.append(strongEl);
         }
         if (!clueEl) {
@@ -289,7 +289,7 @@ export class CrosswordQuestion {
         }
         if (!countEl) {
             countEl = document.createElement('span');
-            countEl.classList.add('count', 'text-nowrap', 'ml-1');
+            countEl.classList.add('count', 'text-nowrap', 'ms-1');
             stickyClue.append(countEl);
         }
         strongEl.innerText = `${word.number} ${this.options.orientation[word.orientation]}`;

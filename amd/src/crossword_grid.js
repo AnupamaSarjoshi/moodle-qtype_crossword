@@ -131,7 +131,7 @@ export class CrosswordGrid extends CrosswordQuestion {
                     const labelText = await getString('wordlabel', 'qtype_crossword', labelParams);
                     if (!labelEl) {
                         let spanEl = document.createElement('span');
-                        spanEl.className = 'word-label text-left';
+                        spanEl.className = 'word-label text-start';
                         spanEl.innerText = labelText;
                         squareEl.append(spanEl);
                     } else {
