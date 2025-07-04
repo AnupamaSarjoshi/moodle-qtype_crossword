@@ -96,7 +96,7 @@ export class CrosswordGrid extends CrosswordQuestion {
             return;
         }
         for (let i = 0; i < words.length; i++) {
-            const answer = words[i].answer.trim().replace(/-|\s|\'|‘|’/g, '');
+            const answer = words[i].answer.trim().replace(/-|\s|'|‘|’/g, '');
             let row = words[i].startrow + 1;
             let column = words[i].startcolumn + 1;
             let answerLength = answer.length;
